@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain | CitySync AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-network-wired"></i>
+                CitySync<span>AI</span>
+            </a>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="domain.html" class="active">Domain</a>
+                <a href="milestones.html">Milestones</a>
+                <a href="documents.html">Documents</a>
+                <a href="presentations.html">Presentations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title text-gradient animate-fade-up">Domain Research</h1>
+            <p class="text-muted animate-fade-up delay-1">Understanding the problem and our technical approach.</p>
+        </div>
+    </header>
+
+    <section class="section pt-0">
+        <div class="container">
+
+            <div class="glass-card mb-4 animate-on-scroll">
+                <h2 class="mb-3"><i class="fa-solid fa-book-open" style="color: var(--primary-cyan);"></i> Literature
+                    Survey</h2>
+                <p>Traditional traffic controllers operate on static timers and struggle with the dynamic, unpredictable nature of real-world urban networks. While recent studies have explored adaptive methods, many fail to scale across large city grids or lack preemptive optimization. Our survey identified a critical need for systems combining the predictive power of <strong>Model Predictive Control (MPC)</strong> to handle local intersection complexities, integrated with the spatial-temporal awareness of <strong>Graph Neural Networks (GNN)</strong> for city-wide coordination.</p>
+            </div>
+
+            <div class="glass-card mb-4 animate-on-scroll">
+                <h2 class="mb-3"><i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i> Research Gap &
+                    Problem</h2>
+                <p><strong>The Gap:</strong> Existing traffic controllers lack the ability to look ahead globally across multiple intersections, and mostly ignore critical scenarios like emergency vehicle routing.</p>
+                <p><strong>The Problem:</strong> How can we intelligently predict and optimize traffic signal timings in a dense urban grid to minimize total vehicle delay, while providing a dynamic "Green Wave" preemption system for emergency vehicles without completely disrupting regular traffic flow?</p>
+            </div>
+
+            <div class="glass-card mb-4 animate-on-scroll">
+                <h2 class="mb-3"><i class="fa-solid fa-bullseye" style="color: var(--primary-blue);"></i> Objectives
+                </h2>
+                <ul style="list-style-type: disc; padding-left: 2rem;">
+                    <li class="mb-2">Model dynamic urban traffic environments using <strong>SUMO</strong>.</li>
+                    <li class="mb-2">Implement <strong>MPC</strong> to solve complex local traffic constraints and compute optimal phase durations.</li>
+                    <li class="mb-2">Develop a <strong>GNN</strong> to understand spatial-temporal relationships across the entire city network.</li>
+                    <li class="mb-2">Create an automated <strong>Emergency Vehicle Preemption</strong> system to clear paths for critical vehicles.</li>
+                    <li class="mb-2">Build interactive <strong>Web and Mobile Interfaces</strong> for administrators and drivers.</li>
+                </ul>
+            </div>
+
+            <div class="glass-card mb-4 animate-on-scroll">
+                <h2 class="mb-3"><i class="fa-solid fa-microchip" style="color: var(--accent-purple);"></i> Methodology
+                </h2>
+                <p>The system follows a microservice-oriented workflow. The <strong>Simulation Core</strong> runs SUMO and extracts real-time state data (waiting cars, EV presence). This data is fed into isolated AI background services. The <strong>GNN Optimizer</strong> and <strong>MPC Controller</strong> concurrently analyze the network state to dictate optimal signal changes. Meanwhile, the <strong>Emergency Preemption Service</strong> constantly monitors for critical vehicles to bypass normal schedules. Finally, data is channeled through a centralized API to live user dashboards.</p>
+            </div>
+
+            <div class="glass-card animate-on-scroll">
+                <h2 class="mb-3"><i class="fa-solid fa-layer-group" style="color: var(--primary-cyan);"></i>
+                    Technologies Used</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                    <span class="btn btn-outline" style="pointer-events: none;">SUMO & TraCI</span>
+                    <span class="btn btn-outline" style="pointer-events: none;">Python (Flask/FastAPI)</span>
+                    <span class="btn btn-outline" style="pointer-events: none;">PyTorch Geometric</span>
+                    <span class="btn btn-outline" style="pointer-events: none;">Node.js</span>
+                    <span class="btn btn-outline" style="pointer-events: none;">React.js & Tailwind</span>
+                    <span class="btn btn-outline" style="pointer-events: none;">Flutter & Dart</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-network-wired" style="color: var(--primary-cyan);"></i>
+                        CitySync<span>AI</span>
+                    </a>
+                    <p>Final Year Research Project</p>
+                    <p>SLIIT</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CitySync AI Research Team.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

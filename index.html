@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitySync AI - Smart Traffic Optimization</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CitySync AI: Multi-Agent Urban Traffic Signal Optimization in Simulated Environments. Final year research project.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-network-wired"></i>
+                CitySync<span>AI</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="domain.html">Domain</a>
+                <a href="milestones.html">Milestones</a>
+                <a href="documents.html">Documents</a>
+                <a href="presentations.html">Presentations</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content animate-fade-up">
+                <h1 class="text-gradient">Multi-Agent Urban Traffic Signal Optimization</h1>
+                <p>Simulating the future of smart cities with decentralized, AI-driven traffic control systems to reduce congestion and emissions.</p>
+                <div class="hero-btns">
+                    <a href="domain.html" class="btn btn-primary">
+                        Explore Research <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section class="section" id="abstract">
+        <div class="container">
+            <h2 class="section-title">Project Abstract</h2>
+            
+            <div class="glass-card mb-5 floating">
+                <p class="mb-3">
+                    Urban traffic congestion is a rapidly growing global issue, leading to increased travel times, economic losses, and severe environmental impacts. Traditional traffic light systems operate on fixed timers and cannot adapt well to real-world anomalies, traffic jams, or emergency vehicles.
+                </p>
+                <p class="mb-3">
+                    <strong>CitySync AI</strong> replaces static systems with a smart, data-driven framework. We utilize <strong>Model Predictive Control (MPC)</strong> and <strong>Graph Neural Networks (GNN)</strong> to predict traffic behavior and adapt signal lights dynamically across the city grid. The system also includes an automated <strong>Emergency Vehicle Preemption</strong> protocol to dynamically clear a path ("Green Wave") for critical vehicles.
+                </p>
+                <p>
+                    Through extensive testing in <strong>SUMO</strong> (Simulation of Urban MObility), our project bridges the gap between theoretical AI models and practical, deployable smart city infrastructure, all accessible through dedicated Web and Mobile interfaces.
+                </p>
+            </div>
+
+            <!-- Key Features Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="glass-card text-center">
+                    <i class="fa-solid fa-network-wired fa-3x mb-3" style="color: var(--primary-cyan);"></i>
+                    <h3 class="mb-2">GNN & MPC</h3>
+                    <p class="text-muted">Predicting traffic flow and spatial-temporal relationships to preemptively adjust signal phases.</p>
+                </div>
+                <div class="glass-card text-center delay-1">
+                    <i class="fa-solid fa-ambulance fa-3x mb-3" style="color: var(--primary-blue);"></i>
+                    <h3 class="mb-2">Emergency Preemption</h3>
+                    <p class="text-muted">Automatically prioritizing critical vehicles by generating dynamic "Green Waves" through the city.</p>
+                </div>
+                <div class="glass-card text-center delay-2">
+                    <i class="fa-solid fa-city fa-3x mb-3" style="color: var(--accent-purple);"></i>
+                    <h3 class="mb-2">SUMO Simulation</h3>
+                    <p class="text-muted">Rigorous testing and validation in highly realistic, large-scale urban micro-simulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-network-wired" style="color: var(--primary-cyan);"></i> CitySync<span>AI</span>
+                    </a>
+                    <p>Final Year Research Project</p>
+                    <p>Sri Lanka Institute of Information Technology (SLIIT)</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="domain.html">Domain Research</a></li>
+                        <li><a href="milestones.html">Project Milestones</a></li>
+                        <li><a href="documents.html">Documents Repository</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">About The Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Repository</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CitySync AI Research Team. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
